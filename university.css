@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.university-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.university-card:hover {
+    transform: translateY(-10px);
+}
+
+.animated-img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.animated-img.visible {
+    opacity: 1;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

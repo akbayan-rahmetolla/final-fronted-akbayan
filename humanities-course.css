@@ -1,0 +1,9 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+    color: #343a40;
+}

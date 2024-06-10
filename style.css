@@ -1,0 +1,236 @@
+body {
+    font-family: 'Times New Roman', sans-serif; /* Google Fonts қосу */
+    background-image: url('background.jpg'); /* Артқы фон суретінің жолы */
+    background-size: cover; /* Суретті экранның өлшеміне қарай кеңейтеді */
+    background-position: center; /* Суретті экранның ортасына орналастырады */
+    background-attachment: fixed; /* Суретті бекітеді, ол прокрутка кезінде өзгермейді */
+    color: #007bff;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(10px); /* Осы жерде размытый эффект қосылады */
+    z-index: -1;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background: white; /* Оқылуды жақсарту үшін мөлдір ақ фон */
+    padding: 2rem;
+}
+.carousel-inner {
+    height: 500px; /* Карусельдің биіктігін өзгертіңіз */
+}
+
+.carousel-item img {
+    width: 100%; /* Ені 100% */
+    height: 100%; /* Биіктігі 100% */
+    object-fit: cover; /* Суреттің ортасына сәйкес қиылады */
+}
+
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.7); /* Мөлдір ақ фон мәтінге */
+    padding: 20px;
+    color: #000; /* Мәтіннің түсі қара */
+    text-align: center;
+    width: auto;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    border-radius: 5px; /* Жиегі жұмыр болу үшін */
+}
+.container.mt-5 {
+    margin-top: 3rem; /* Жоғарғы отступ */
+    font-family: 'Times New Roman', sans-serif;
+    color:#010204;
+    background-color: #ffffff; /* Ақ фон */
+    padding: 20px; /* Ішкі отступ */
+    border-radius: 5px; /* Жиектерді дөңгелектеп жасау */
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #01050a;
+}
+footer p {
+    margin-bottom: 10px; /* Параграфтар арасында отступ */
+}
+
+.footer {
+    background: #007bff; /* Көк түс */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.custom-card {
+    height: 100%; /* Карточкалардың биіктігін толығымен толтырады */
+}
+
+.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom-card img {
+    width: 100%; /* Суреттің ені толықтай болады */
+    height: 400px; /* Суреттің биіктігін өзгерту */
+    object-fit: cover; /* Суретті карточканың ішіне сай болатындай қиып алады */
+}
+
+.social-review {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* Карточка стилдері */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+/* Кнопка стилдері */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-lg {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f8ff;
+}
+
+.navbar.dark-mode, .footer.dark-mode {
+    background-color: #333;
+    color: #f0f8ff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
