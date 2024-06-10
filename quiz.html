@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сауалнама</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz.css">
+    <!-- Favicon қосу -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+     <link rel="manifest" href="favicon.ico/site.webmanifest">
+     <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome қосу -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Навигациялық панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> Білім</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Басты бет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> Біз туралы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html"><i class="fas fa-book"></i> Курстар</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html"><i class="fas fa-question-circle"></i> Сауалнама</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Байланыс</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="university.html"><i class="fas fa-university"></i> Университеттер</a>
+                </li>
+                </div>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">KK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index_en.html">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.ru.html">RU</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+              
+
+    <!-- Сауалнама -->
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center">Курсқа өтуге арналған сауалнама</h2>
+        <form id="quizForm">
+            <div class="form-group">
+                <label for="question1">1. Қазақстан Республикасының астанасы қай қала?</label>
+                <div>
+                    <input type="radio" id="q1a1" name="question1" value="A">
+                    <label for="q1a1">Алматы</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1a2" name="question1" value="B">
+                    <label for="q1a2">Нұр-Сұлтан</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1a3" name="question1" value="C">
+                    <label for="q1a3">Шымкент</label>
+                </div>
+                <div>
+                    <input type="radio" id="q1a4" name="question1" value="D">
+                    <label for="q1a4">Ақтау</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question2">2. Ең үлкен материк қайсы?</label>
+                <div>
+                    <input type="radio" id="q2a1" name="question2" value="A">
+                    <label for="q2a1">Африка</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2a2" name="question2" value="B">
+                    <label for="q2a2">Антарктида</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2a3" name="question2" value="C">
+                    <label for="q2a3">Азия</label>
+                </div>
+                <div>
+                    <input type="radio" id="q2a4" name="question2" value="D">
+                    <label for="q2a4">Еуропа</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question3">3. Жердің серігі қалай аталады?</label>
+                <div>
+                    <input type="radio" id="q3a1" name="question3" value="A">
+                    <label for="q3a1">Ай</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3a2" name="question3" value="B">
+                    <label for="q3a2">Күн</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3a3" name="question3" value="C">
+                    <label for="q3a3">Марс</label>
+                </div>
+                <div>
+                    <input type="radio" id="q3a4" name="question3" value="D">
+                    <label for="q3a4">Юпитер</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question4">4. Қазақстандағы ең ұзын өзен?</label>
+                <div>
+                    <input type="radio" id="q4a1" name="question4" value="A">
+                    <label for="q4a1">Ертіс</label>
+                </div>
+                <div>
+                    <input type="radio" id="q4a2" name="question4" value="B">
+                    <label for="q4a2">Іле</label>
+                </div>
+                <div>
+                    <input type="radio" id="q4a3" name="question4" value="C">
+                    <label for="q4a3">Жайық</label>
+                </div>
+                <div>
+                    <input type="radio" id="q4a4" name="question4" value="D">
+                    <label for="q4a4">Сырдария</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question5">5. Қазақстанның ең биік нүктесі қай тауда орналасқан?</label>
+                <div>
+                    <input type="radio" id="q5a1" name="question5" value="A">
+                    <label for="q5a1">Тянь-Шань</label>
+                </div>
+                <div>
+                    <input type="radio" id="q5a2" name="question5" value="B">
+                    <label for="q5a2">Алтай</label>
+                </div>
+                <div>
+                    <input type="radio" id="q5a3" name="question5" value="C">
+                    <label for="q5a3">Қарқаралы</label>
+                </div>
+                <div>
+                    <input type="radio" id="q5a4" name="question5" value="D">
+                    <label for="q5a4">Мұғалжар</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question6">6. Каспий теңізі қандай теңіз?</label>
+                <div>
+                    <input type="radio" id="q6a1" name="question6" value="A">
+                    <label for="q6a1">Тұщы су</label>
+                </div>
+                <div>
+                    <input type="radio" id="q6a2" name="question6" value="B">
+                    <label for="q6a2">Тұзды су</label>
+                </div>
+                <div>
+                    <input type="radio" id="q6a3" name="question6" value="C">
+                    <label for="q6a3">Ағынды</label>
+                </div>
+                <div>
+                    <input type="radio" id="q6a4" name="question6" value="D">
+                    <label for="q6a4">Ағынсыз</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question7">7. Қазақстанда қанша облыс бар?</label>
+                <div>
+                    <input type="radio" id="q7a1" name="question7" value="A">
+                    <label for="q7a1">14</label>
+                </div>
+                <div>
+                    <input type="radio" id="q7a2" name="question7" value="B">
+                    <label for="q7a2">12</label>
+                </div>
+                <div>
+                    <input type="radio" id="q7a3" name="question7" value="C">
+                    <label for="q7a3">16</label>
+                </div>
+                <div>
+                    <input type="radio" id="q7a4" name="question7" value="D">
+                    <label for="q7a4">10</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question8">8. 25-тің квадрат түбірі неге тең?</label>
+                <div>
+                    <input type="radio" id="q8a1" name="question8" value="A">
+                    <label for="q8a1">3</label>
+                </div>
+                <div>
+                    <input type="radio" id="q8a2" name="question8" value="B">
+                    <label for="q8a2">5</label>
+                </div>
+                <div>
+                    <input type="radio" id="q8a3" name="question8" value="C">
+                    <label for="q8a3">7</label>
+                </div>
+                <div>
+                    <input type="radio" id="q8a4" name="question8" value="D">
+                    <label for="q8a4">9</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question9">9. Егер a=4 және b=3 болса, a^2 + b^2 қанша?</label>
+                <div>
+                    <input type="radio" id="q9a1" name="question9" value="A">
+                    <label for="q9a1">16</label>
+                </div>
+                <div>
+                    <input type="radio" id="q9a2" name="question9" value="B">
+                    <label for="q9a2">25</label>
+                </div>
+                <div>
+                    <input type="radio" id="q9a3" name="question9" value="C">
+                    <label for="q9a3">13</label>
+                </div>
+                <div>
+                    <input type="radio" id="q9a4" name="question9" value="D">
+                    <label for="q9a4">10</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question10">10. 6 және 8 сандарының ең үлкен ортақ бөлгіші (ЕҮОБ) қанша?</label>
+                <div>
+                    <input type="radio" id="q10a1" name="question10" value="A">
+                    <label for="q10a1">2</label>
+                </div>
+                <div>
+                    <input type="radio" id="q10a2" name="question10" value="B">
+                    <label for="q10a2">4</label>
+                </div>
+                <div>
+                    <input type="radio" id="q10a3" name="question10" value="C">
+                    <label for="q10a3">6</label>
+                </div>
+                <div>
+                    <input type="radio" id="q10a4" name="question10" value="D">
+                    <label for="q10a4">8</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question11">11. x+2=5 теңдеуінің шешімі қандай?</label>
+                <div>
+                    <input type="radio" id="q11a1" name="question11" value="A">
+                    <label for="q11a1">1</label>
+                </div>
+                <div>
+                    <input type="radio" id="q11a2" name="question11" value="B">
+                    <label for="q11a2">2</label>
+                </div>
+                <div>
+                    <input type="radio" id="q11a3" name="question11" value="C">
+                    <label for="q11a3">3</label>
+                </div>
+                <div>
+                    <input type="radio" id="q11a4" name="question11" value="D">
+                    <label for="q11a4">4</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question12">12. Үшбұрыштың ішкі бұрыштарының қосындысы қанша градус?</label>
+                <div>
+                    <input type="radio" id="q12a1" name="question12" value="A">
+                    <label for="q12a1">90</label>
+                </div>
+                <div>
+                    <input type="radio" id="q12a2" name="question12" value="B">
+                    <label for="q12a2">180</label>
+                </div>
+                <div>
+                    <input type="radio" id="q12a3" name="question12" value="C">
+                    <label for="q12a3">270</label>
+                </div>
+                <div>
+                    <input type="radio" id="q12a4" name="question12" value="D">
+                    <label for="q12a4">360</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question13">13. "Астана" сөзінің түбірі қандай?</label>
+                <div>
+                    <input type="radio" id="q13a1" name="question13" value="A">
+                    <label for="q13a1">Астан</label>
+                </div>
+                <div>
+                    <input type="radio" id="q13a2" name="question13" value="B">
+                    <label for="q13a2">Астана</label>
+                </div>
+                <div>
+                    <input type="radio" id="q13a3" name="question13" value="C">
+                    <label for="q13a3">Ана</label>
+                </div>
+                <div>
+                    <input type="radio" id="q13a4" name="question13" value="D">
+                    <label for="q13a4">Тас</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question14">14. "Қазақстан" сөзінің аудармасы қандай?</label>
+                <div>
+                    <input type="radio" id="q14a1" name="question14" value="A">
+                    <label for="q14a1">Country of Peace</label>
+                </div>
+                <div>
+                    <input type="radio" id="q14a2" name="question14" value="B">
+                    <label for="q14a2">Land of Kazakhs</label>
+                </div>
+                <div>
+                    <input type="radio" id="q14a3" name="question14" value="C">
+                    <label for="q14a3">Country of Mountains</label>
+                </div>
+                <div>
+                    <input type="radio" id="q14a4" name="question14" value="D">
+                    <label for="q14a4">Land of Nomads</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question15">15. Синонимдер не білдіреді?</label>
+                <div>
+                    <input type="radio" id="q15a1" name="question15" value="A">
+                    <label for="q15a1">Бірдей мағынадағы сөздер</label>
+                </div>
+                <div>
+                    <input type="radio" id="q15a2" name="question15" value="B">
+                    <label for="q15a2">Қарама-қарсы мағынадағы сөздер</label>
+                </div>
+                <div>
+                    <input type="radio" id="q15a3" name="question15" value="C">
+                    <label for="q15a3">Әр түрлі мағынадағы сөздер</label>
+                </div>
+                <div>
+                    <input type="radio" id="q15a4" name="question15" value="D">
+                    <label for="q15a4">Дұрыс емес мағынадағы сөздер</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question16">16. "Мектеп" сөзінің көпше түрі қандай?</label>
+                <div>
+                    <input type="radio" id="q16a1" name="question16" value="A">
+                    <label for="q16a1">Мектептер</label>
+                </div>
+                <div>
+                    <input type="radio" id="q16a2" name="question16" value="B">
+                    <label for="q16a2">Мектептерді</label>
+                </div>
+                <div>
+                    <input type="radio" id="q16a3" name="question16" value="C">
+                    <label for="q16a3">Мектепке</label>
+                </div>
+                <div>
+                    <input type="radio" id="q16a4" name="question16" value="D">
+                    <label for="q16a4">Мектеппен</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question17">17. "Білім" сөзінің антонимі қандай?</label>
+                <div>
+                    <input type="radio" id="q17a1" name="question17" value="A">
+                    <label for="q17a1">Ақыл</label>
+                </div>
+                <div>
+                    <input type="radio" id="q17a2" name="question17" value="B">
+                    <label for="q17a2">Жан</label>
+                </div>
+                <div>
+                    <input type="radio" id="q17a3" name="question17" value="C">
+                    <label for="q17a3">Надандық</label>
+                </div>
+                <div>
+                    <input type="radio" id="q17a4" name="question17" value="D">
+                    <label for="q17a4">Жақсылық</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="question18">18. 3 * 3 неше?</label>
+                <div>
+                    <input type="radio" id="q18a1" name="question18" value="A">
+                    <label for="q18a1">6</label>
+                </div>
+                <div>
+                    <input type="radio" id="q18a2" name="question18" value="B">
+                    <label for="q18a2">8</label>
+                </div>
+                <div>
+                    <input type="radio" id="q18a3" name="question18" value="C">
+                    <label for="q18a3">9</label>
+                </div>
+                <div>
+                    <input type="radio" id="q18a4" name="question18" value="D">
+                    <label for="q18a4">12</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Жіберу</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-primary text-light text-center py-3">
+        <div class="container">
+            <p>Edusite &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

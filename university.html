@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Университеттер</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="university.css">
+    <!-- Favicon қосу -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome қосу -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Навигациялық панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> Білім</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Басты бет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> Біз туралы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html"><i class="fas fa-book"></i> Курстар</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html"><i class="fas fa-question-circle"></i> Сауалнама</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Байланыс</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="university.html"><i class="fas fa-university"></i> Университеттер</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Университеттер бөлімі -->
+    <div class="container mt-5">
+        <h2 class="section-title text-center">Университеттер</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 university-card" data-sound="sound1.mp3">
+                <div class="card mb-4 custom-card">
+                    <img src="aitu.jpg" class="card-img-top animated-img" alt="AITU">
+                    <div class="card-body">
+                        <h5 class="card-title">AITU</h5>
+                        <p class="card-text">AITU — Қазақстандағы ең алдыңғы қатарлы университеттердің бірі. Бұл университет ақпараттық технологиялар саласында сапалы білім береді.</p>
+                        <a href="#" class="btn btn-primary">Толығырақ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 university-card" data-sound="sound2.mp3">
+                <div class="card mb-4 custom-card">
+                    <img src="mnu.jpg" class="card-img-top animated-img" alt="MNU">
+                    <div class="card-body">
+                        <h5 class="card-title">MNU</h5>
+                        <p class="card-text">MNU — Қазақстандағы танымал университеттердің бірі. Бұл университет жаратылыстану ғылымдары мен инженерия саласында жетекші орын алады.</p>
+                        <a href="#" class="btn btn-primary">Толығырақ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 university-card" data-sound="sound3.mp3">
+                <div class="card mb-4 custom-card">
+                    <img src="sdu.jpg" class="card-img-top animated-img" alt="SDU">
+                    <div class="card-body">
+                        <h5 class="card-title">SDU</h5>
+                        <p class="card-text">SDU — Қазақстандағы ең ірі университеттердің бірі. Бұл университет гуманитарлық ғылымдар мен әлеуметтік ғылымдар саласында танымал.</p>
+                        <a href="#" class="btn btn-primary">Толығырақ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+        <div class="container">
+            <p>Edusite &copy; 2024</p>
+            <p>Біздің мақсатымыз - сапалы білім беру және білім алушылардың қабілеттерін арттыру.</p>
+            <p>Байланыс: info@edusite.kz | Тел: +7 (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="university.js"></script>
+</body>
+</html>

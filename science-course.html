@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жаратылыс-математика курсы</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="science-course.css">
+    <!-- Favicon қосу -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="favicon.ico/site.webmanifest">
+    <link rel="mask-icon" href="favicon.ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome қосу -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Навигациялық панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap"></i> Білім</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Басты бет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> Біз туралы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html"><i class="fas fa-book"></i> Курстар</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html"><i class="fas fa-question-circle"></i> Сауалнама</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Байланыс</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="university.html"><i class="fas fa-university"></i> Университеттер</a>
+              </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">KK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index_en.html">EN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.ru.html">RU</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Курс туралы ақпарат -->
+    <div class="container mt-5">
+        <h2 class="course-title">Жаратылыс-математика курсы</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="video-container">
+                    <iframe width="100%" height="415" src="https://www.youtube.com/embed/ADNjAgYxVxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h2>Курс туралы</h2>
+                <p>"Жаратылыс-математика курсы" тақырыбында біз:</p>
+                <ul id="courseList">
+                    <li>Математика, химия, физика, биология пәндерін тереңірек оқып-үйренеміз</li>
+                    <li>Зерттеу әдістерін және практикалық дағдыларды үйренеміз</li>
+                    <li>Критикалық ойлау және ғылыми талдау дағдыларын дамытамыз</li>
+                </ul>
+                <button id="courseButton" class="btn btn-primary mt-3">Курс қосу</button>
+            </div>
+            <div class="col-md-4">
+                <h4>Курс бағдарламасы</h4>
+                <ol id="programList" class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        1.1 Математика
+                        <span class="badge badge-primary badge-pill">15:00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        1.2 Химия
+                        <span class="badge badge-primary badge-pill">17:00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        1.3 Физика
+                        <span class="badge badge-primary badge-pill">20:00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        1.4 Биология
+                        <span class="badge badge-secondary badge-pill">22:00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        1.5 Информатика
+                        <span class="badge badge-secondary badge-pill">23:00</span>
+                    </li>
+                </ol>
+                <input type="text" id="newLesson" class="form-control mt-3" placeholder="Жаңа сабақты енгізіңіз">
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-primary text-light text-center py-3 mt-5">
+        <div class="container">
+            <p>Edusite &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="science-course.js"></script>
+</body>
+</html>
